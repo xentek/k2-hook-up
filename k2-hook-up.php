@@ -3,7 +3,7 @@
 	Plugin Name: K2 Hook Up
 	Plugin URI: http://xentek.net/code/wordpress/plugins/k2-hook-up/
 	Description: This plugin allows you to insert arbitrary content into the many hooks that the K2 theme provides. No programming skills required.
-	Version: 0.5
+	Version: 0.6
 	Author: Eric Marden
 	Author URI: http://www.xentek.net/
 */
@@ -23,7 +23,7 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
-add_action('init','flaresmith_load_translation');
+add_action('init','k2hookup_load_translation');
 add_action('admin_menu', 'add_k2hookup_options_page');
 
 /* K2 Hooks */
