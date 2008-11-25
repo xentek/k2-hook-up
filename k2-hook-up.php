@@ -2,8 +2,8 @@
 /*
 	Plugin Name: K2 Hook Up
 	Plugin URI: http://xentek.net/code/wordpress/plugins/k2-hook-up/
-	Description: This plugin allows you to insert arbitrary content into the many hooks that the K2 theme provides. No programming skills required.
-	Version: 0.6
+	Description: This plugin allows you to insert arbitrary content into the many hooks that the K2 theme provides. No programming skills required. <a href="/wp-admin/themes.php?page=k2-hook-up/k2-hook-up-options.php">Configure Settings</a> or <a href="http://xentek.net/code/wordpress/plugins/k2-hook-up/">Get Support</a>. <em>Code</em> 
+	Version: 1.0
 	Author: Eric Marden
 	Author URI: http://www.xentek.net/
 */
@@ -44,43 +44,92 @@ function add_k2hookup_options_page()
 {
 	if (function_exists('add_options_page'))
 	{
-		add_options_page('K2 Hook Up', 'K2 Hook Up', 10, dirname(__FILE__) . '/k2-hook-up-options.php');
+		add_theme_page('K2 Hook Up', 'K2 Hook Up', 10, dirname(__FILE__) . '/k2-hook-up-options.php');
 	}
 }
 
 function k2hookup_template_body_top()
 {
-	echo stripslashes(get_option('k2hookup_template_body_top'));
+	$val = stripslashes(get_option('k2hookup_template_body_top'));
+	if (get_option('k2hookup_template_body_top_php')) {
+		ob_start();
+		eval("?>$val<?php ");
+		$val = ob_get_contents();
+		ob_end_clean();
+	} 
+	echo $val;
 }
 
 function k2hookup_template_before_header()
 {
-	echo stripslashes(get_option('k2hookup_template_before_header'));
+	$val = stripslashes(get_option('k2hookup_template_before_header'));
+	if (get_option('k2hookup_template_before_header_php')) {
+		ob_start();
+		eval("?>$val<?php ");
+		$val = ob_get_contents();
+		ob_end_clean();
+	} 
+	echo $val;
 }
 
 function k2hookup_template_header()
 {
-	echo stripslashes(get_option('k2hookup_template_header'));
+	$val = stripslashes(get_option('k2hookup_template_header'));
+	if (get_option('k2hookup_template_header_php')) {
+		ob_start();
+		eval("?>$val<?php ");
+		$val = ob_get_contents();
+		ob_end_clean();
+	} 
+	echo $val;
 }
 
 function k2hookup_template_before_content()
 {
-	echo stripslashes(get_option('k2hookup_template_before_content'));
+	$val = stripslashes(get_option('k2hookup_template_before_content'));
+	if (get_option('k2hookup_template_before_content_php')) {
+		ob_start();
+		eval("?>$val<?php ");
+		$val = ob_get_contents();
+		ob_end_clean();
+	} 
+	echo $val;
 }
 
 function k2hookup_template_after_content()
 {
-	echo stripslashes(get_option('k2hookup_template_after_content'));
+	$val = stripslashes(get_option('k2hookup_template_after_content'));
+	if (get_option('k2hookup_template_after_content_php')) {
+		ob_start();
+		eval("?>$val<?php ");
+		$val = ob_get_contents();
+		ob_end_clean();
+	} 
+	echo $val;
 }
 
 function k2hookup_template_before_footer()
 {
-	echo stripslashes(get_option('k2hookup_template_before_footer'));
+	$val = stripslashes(get_option('k2hookup_template_before_footer'));
+	if (get_option('k2hookup_template_before_footer_php')) {
+		ob_start();
+		eval("?>$val<?php ");
+		$val = ob_get_contents();
+		ob_end_clean();
+	} 
+	echo $val;
 }
 
 function k2hookup_template_footer()
 {
-	echo stripslashes(get_option('k2hookup_template_footer'));
+	$val = stripslashes(get_option('k2hookup_template_footer'));
+	if (get_option('k2hookup_template_footer_php')) {
+		ob_start();
+		eval("?>$val<?php ");
+		$val = ob_get_contents();
+		ob_end_clean();
+	} 
+	echo $val;
 }
 
 ?>
