@@ -1,7 +1,7 @@
 === K2 Hook Up ===
 Contributors: xenlab
 Donate link: http://xentek.net/code/wordpress/plugins/k2-hook-up/
-Tags: k2, content, theme, themes, template, custom, css, html, javascript, formatting, style
+Tags: k2, content, theme, themes, template, custom, css, html, javascript, formatting, style, snippets, code
 Requires at least: 2.5
 Tested up to: 2.6.3
 Stable tag: trunk
