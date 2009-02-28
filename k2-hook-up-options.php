@@ -194,10 +194,11 @@ $k2hookup_template_footer_php = get_option('k2hookup_template_footer_php');
 		</p>
 
 		<p class="hook">
-			<label class="head" for="k2hookup_template_header_menu">Header:</label>
+			<label class="head" for="k2hookup_template_header_menu">Header Menu:</label>
 			<textarea class="resizable" id="k2hookup_template_header_menu" name="k2hookup_template_header_menu" rows="6" cols="88"><?php echo stripslashes(get_option('k2hookup_template_header_menu')); ?></textarea>
 			<br />
 			<input <?php if ($k2hookup_template_header_menu_php) { echo 'checked="checked"'; } ?> type="checkbox" value="1" name="k2hookup_template_header_menu_php" id="k2hookup_template_header_menu_php" /> <label for="k2hookup_template_header_menu_php" class="small"><?php _e('Execute PHP on this hook?','k2hookup'); ?></label>
+			<small><?php _e('Insert new menu links, wrapped in &lt;li&gt; tags','k2hookup'); ?></small>
 		</p>
 
 
