@@ -10,7 +10,7 @@ Be prepared to get hooked up! This plugin allows you to insert any content you w
 
 == Description ==
 
-The K2 theme provides a number of additional hooks into the template. If you’re handy with PHP you can easily add any manner of arbitrary content to these 7 regions. For everyone else, there is K2 Hook Up.
+The K2 theme provides a number of additional hooks into the template. If you’re handy with PHP you can easily add any manner of arbitrary content to these 8 regions. For everyone else, there is K2 Hook Up.
 
 This plugin provides an options screen with each unique hook exposed as a simple text box. Insert any HTML, CSS, JavaScript, or PHP that you like, and click submit and it will be instantly published to that region of your template.
 

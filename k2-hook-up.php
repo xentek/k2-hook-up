@@ -3,7 +3,7 @@
 	Plugin Name: K2 Hook Up
 	Plugin URI: http://xentek.net/code/wordpress/plugins/k2-hook-up/
 	Description: This plugin allows you to insert arbitrary content into the many hooks that the K2 theme provides. No programming skills required. <a href="/wp-admin/themes.php?page=k2-hook-up/k2-hook-up-options.php">Configure Settings</a> or <a href="http://xentek.net/code/wordpress/plugins/k2-hook-up/">Get Support</a>. <em>Code</em> 
-	Version: 1.1
+	Version: 1.1.1
 	Author: Eric Marden
 	Author URI: http://www.xentek.net/
 */
