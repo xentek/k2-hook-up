@@ -26,6 +26,7 @@ if ( !empty($_POST ) ) :
 	update_option('k2hookup_template_body_top',$_POST['k2hookup_template_body_top']);
 	update_option('k2hookup_template_before_header',$_POST['k2hookup_template_before_header']);
 	update_option('k2hookup_template_header',$_POST['k2hookup_template_header']);
+	update_option('k2hookup_template_header_menu',$_POST['k2hookup_template_header_menu']);
 	update_option('k2hookup_template_before_content',$_POST['k2hookup_template_before_content']);
 	update_option('k2hookup_template_after_content',$_POST['k2hookup_template_after_content']);
 	update_option('k2hookup_template_before_footer',$_POST['k2hookup_template_before_footer']);
@@ -41,6 +42,10 @@ if ( !empty($_POST ) ) :
 
 	if (!isset($_POST['k2hookup_template_header_php'])) {
 		$_POST['k2hookup_template_header_php'] = 0;
+	}
+
+	if (!isset($_POST['k2hookup_template_header_menu_php'])) {
+		$_POST['k2hookup_template_header_menu_php'] = 0;
 	}
 
 	if (!isset($_POST['k2hookup_template_before_content_php'])) {
@@ -62,6 +67,7 @@ if ( !empty($_POST ) ) :
 	update_option('k2hookup_template_body_top_php',$_POST['k2hookup_template_body_top_php']);
 	update_option('k2hookup_template_before_header_php',$_POST['k2hookup_template_before_header_php']);
 	update_option('k2hookup_template_header_php',$_POST['k2hookup_template_header_php']);
+	update_option('k2hookup_template_header_menu_php',$_POST['k2hookup_template_header_menu_php']);
 	update_option('k2hookup_template_before_content_php',$_POST['k2hookup_template_before_content_php']);
 	update_option('k2hookup_template_after_content_php',$_POST['k2hookup_template_after_content_php']);
 	update_option('k2hookup_template_before_footer_php',$_POST['k2hookup_template_before_footer_php']);
@@ -72,6 +78,7 @@ if ( !empty($_POST ) ) :
 $k2hookup_template_body_top_php = get_option('k2hookup_template_body_top_php');
 $k2hookup_template_before_header_php = get_option('k2hookup_template_before_header_php');
 $k2hookup_template_header_php = get_option('k2hookup_template_header_php');
+$k2hookup_template_header_menu_php = get_option('k2hookup_template_header_menu_php');
 $k2hookup_template_before_content_php = get_option('k2hookup_template_before_content_php');
 $k2hookup_template_after_content_php = get_option('k2hookup_template_after_content_php');
 $k2hookup_template_before_footer_php = get_option('k2hookup_template_before_footer_php');
@@ -149,6 +156,7 @@ $k2hookup_template_footer_php = get_option('k2hookup_template_footer_php');
 		<input type="hidden" name="page_options" value="k2hookup_template_body_top" />
 		<input type="hidden" name="page_options" value="k2hookup_template_before_header" />
 		<input type="hidden" name="page_options" value="k2hookup_template_header" />
+		<input type="hidden" name="page_options" value="k2hookup_template_header_menu" />
 		<input type="hidden" name="page_options" value="k2hookup_template_before_content" />
 		<input type="hidden" name="page_options" value="k2hookup_template_after_content" />
 		<input type="hidden" name="page_options" value="k2hookup_template_before_footer" />
@@ -157,6 +165,7 @@ $k2hookup_template_footer_php = get_option('k2hookup_template_footer_php');
 		<input type="hidden" name="page_options" value="k2hookup_template_body_top_php" />
 		<input type="hidden" name="page_options" value="k2hookup_template_before_header_php" />
 		<input type="hidden" name="page_options" value="k2hookup_template_header_php" />
+		<input type="hidden" name="page_options" value="k2hookup_template_header_menu_php" />
 		<input type="hidden" name="page_options" value="k2hookup_template_before_content_php" />
 		<input type="hidden" name="page_options" value="k2hookup_template_after_content_php" />
 		<input type="hidden" name="page_options" value="k2hookup_template_before_footer_php" />
@@ -183,6 +192,14 @@ $k2hookup_template_footer_php = get_option('k2hookup_template_footer_php');
 			<br />
 			<input <?php if ($k2hookup_template_header_php) { echo 'checked="checked"'; } ?> type="checkbox" value="1" name="k2hookup_template_header_php" id="k2hookup_template_header_php" /> <label for="k2hookup_template_header_php" class="small"><?php _e('Execute PHP on this hook?','k2hookup'); ?></label>
 		</p>
+
+		<p class="hook">
+			<label class="head" for="k2hookup_template_header_menu">Header:</label>
+			<textarea class="resizable" id="k2hookup_template_header_menu" name="k2hookup_template_header_menu" rows="6" cols="88"><?php echo stripslashes(get_option('k2hookup_template_header_menu')); ?></textarea>
+			<br />
+			<input <?php if ($k2hookup_template_header_menu_php) { echo 'checked="checked"'; } ?> type="checkbox" value="1" name="k2hookup_template_header_menu_php" id="k2hookup_template_header_menu_php" /> <label for="k2hookup_template_header_menu_php" class="small"><?php _e('Execute PHP on this hook?','k2hookup'); ?></label>
+		</p>
+
 
 		<p class="hook">
 			<label class="head" for="k2hookup_template_before_content">Before Content:</label>
