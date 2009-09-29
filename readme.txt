@@ -3,7 +3,7 @@ Contributors: xenlab
 Donate link: http://xentek.net/code/wordpress/plugins/k2-hook-up/
 Tags: k2, content, theme, themes, template, custom, css, html, javascript, formatting, style, snippets, code
 Requires at least: 2.5
-Tested up to: 2.7.1
+Tested up to: 2.9
 Stable tag: trunk
 
 Be prepared to get hooked up! This plugin allows you to insert any content you want into the custom hooks added by the K2 theme. K2-RC6+ is required.
@@ -30,11 +30,15 @@ If you use the [K2 theme](http://getk2.com/), you'll want this. This plugin will
 
 = Which version of K2 do I need? =
 
-At least K2-RC6. Versions prior to this did not include the hooks necessary for this plugin to work.
+At least K2-RC6. Versions prior to this did not include the hooks necessary for this plugin to work. Use the [latest nightly](http://getk2.com/nightly), to ensure that all of the hooks presented will be available in your theme.
+
+= Does this work with K2 child themes? =
+
+Yes. For more information on K2 child themes, [check the wiki](http://code.google.com/p/kaytwo/wiki/K2ChildThemes).
 
 = Can I paste in PHP code? =
 
-<strike>Not yet.</strike> As of v1.0, the plugin has an option next to each hook's input box to indicate if the content contains PHP or not. Just be sure to enclose your content in the proper tags: `<?php // your code goes here  ?>`. Code output that you want to see should be [print](http://php.net/print)'d or [echo](http://php.net/echo)'d.
+As of v1.0, the plugin has an option next to each hook's input box to indicate if the content contains PHP or not. Just be sure to enclose your content in the proper tags: `<?php // your code goes here  ?>`. Code output that you want to see should be done via [print](http://php.net/print) or [echo](http://php.net/echo).
 
 = I think I'm doing it wrong. I put in some PHP code, checked the box, and saved it, but now nothing is showing up for that Hook, including the plain jane HTML that I put in there, too. =
 
@@ -50,13 +54,19 @@ Let me know if you implement these hooks in your theme so I can link to you.
 
 Its filed under the 'Design' tab, next to the other K2 option pages. It seemed to be the most logical place for it. Earlier versions filed it under the Settings tab.
 
+= I want to help with development of this Plugin! =
+
+The project is now hosted on [github.com](http://github.com/xentek/k2-hook-up). Just fork the project and send me a pull request.
+
+[New to git?](http://delicious.com/ericmarden/git)
+
 == Screenshots ==
 
 1. Partial view of the K2 Hook Up options screen.
 
 == Arbitrary section ==
 
-The K2 Hook Up plugin was developed by Eric Marden, and is provided with out warranty under the GPLv3 License. More info and other plugins at: http://xentek.net
+The K2 Hook Up plugin was developed by Eric Marden, and is provided with out warranty under the GPLv2 License. More info and other plugins at: http://xentek.net
 
 Copyright 2008  Eric Marden  (email : wp@xentek.net)
 
