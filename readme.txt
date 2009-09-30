@@ -64,7 +64,7 @@ The project is now hosted on [github.com](http://github.com/xentek/k2-hook-up). 
 
 1. Partial view of the K2 Hook Up options screen.
 
-== Arbitrary section ==
+== License ==
 
 The K2 Hook Up plugin was developed by Eric Marden, and is provided with out warranty under the GPLv2 License. More info and other plugins at: http://xentek.net
 
