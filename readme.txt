@@ -60,6 +60,11 @@ The project is now hosted on [github.com](http://github.com/xentek/k2-hook-up). 
 
 [New to git?](http://delicious.com/ericmarden/git)
 
+== Changelog ==
+
+= 1.4 =
+* Fixed an issue with the saving of template_primary_begin and template_primary_end hooks.
+
 == Screenshots ==
 
 1. Partial view of the K2 Hook Up options screen.
