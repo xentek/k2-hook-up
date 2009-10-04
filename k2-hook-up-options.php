@@ -28,6 +28,8 @@ if ( !empty($_POST ) ) :
 	update_option('k2hookup_template_before_header',$_POST['k2hookup_template_before_header']);
 	update_option('k2hookup_template_header',$_POST['k2hookup_template_header']);
 	update_option('k2hookup_template_header_menu',$_POST['k2hookup_template_header_menu']);
+	update_option('k2hookup_template_primary_begin',$_POST['k2hookup_template_primary_begin']);
+	update_option('k2hookup_template_primary_end',$_POST['k2hookup_template_primary_end']);
 	update_option('k2hookup_template_before_content',$_POST['k2hookup_template_before_content']);
 	update_option('k2hookup_template_after_content',$_POST['k2hookup_template_after_content']);
 	update_option('k2hookup_template_entry_head',$_POST['k2hookup_template_entry_head']);
