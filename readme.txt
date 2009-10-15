@@ -62,6 +62,9 @@ The project is now hosted on [github.com](http://github.com/xentek/k2-hook-up). 
 
 == Changelog ==
 
+= 1.4.2 =
+* Fixed the 'Configure Settings' link in the plugin header so that it wasn't hardcoded to a specific location of wp-admin.
+
 = 1.4 =
 * Fixed an issue with the saving of template_primary_begin and template_primary_end hooks.
 
