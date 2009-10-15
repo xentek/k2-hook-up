@@ -266,14 +266,14 @@ $k2hookup_template_footer_php = get_option('k2hookup_template_footer_php');
 		</p>
 
 		<p class="hook">
-			<label class="head" for="k2hookup_template_entry_head">Before Content:</label>
+			<label class="head" for="k2hookup_template_entry_head">Entry Head:</label>
 			<textarea class="resizable" id="k2hookup_template_entry_head" name="k2hookup_template_entry_head" rows="6" cols="88"><?php echo stripslashes(get_option('k2hookup_template_entry_head')); ?></textarea>
 			<br />
 			<input <?php if ($k2hookup_template_entry_head_php) { echo 'checked="checked"'; } ?> type="checkbox" value="1" name="k2hookup_template_entry_head_php" id="k2hookup_template_entry_head_php" /> <label for="k2hookup_template_entry_head_php" class="small"><?php _e('Execute PHP on this hook?','k2hookup'); ?></label>
 		</p>
 
 		<p class="hook">
-			<label class="head" for="k2hookup_template_entry_foot">After Content:</label>
+			<label class="head" for="k2hookup_template_entry_foot">Entry Foot:</label>
 			<textarea class="resizable" id="k2hookup_template_entry_foot" name="k2hookup_template_entry_foot" rows="6" cols="88"><?php echo stripslashes(get_option('k2hookup_template_entry_foot')); ?></textarea>
 			<br />
 			<input <?php if ($k2hookup_template_entry_foot_php) { echo 'checked="checked"'; } ?> type="checkbox" value="1" name="k2hookup_template_entry_foot_php" id="k2hookup_template_entry_foot_php" /> <label for="k2hookup_template_entry_foot_php" class="small"><?php _e('Execute PHP on this hook?','k2hookup'); ?></label>
